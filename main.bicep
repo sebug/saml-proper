@@ -1,5 +1,9 @@
+@minLength(3)
+@maxLength(24)
+param storageName string
+
 resource stg 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-  name: 'sebugamlproper'
+  name: storageName
   location: 'switzerlandnorth'
   sku: {
     name: 'Standard_LRS'

@@ -21,5 +21,6 @@ We'll put the resources in a resource group:
 Now we can create a deployment group
 
 	bicepFile=main.bicep
-	az deployment group create --name spbicep --resource-group samlProperResourceGroup --template-file $bicepFile
+	az deployment group create --name spbicep --resource-group samlProperResourceGroup --template-file $bicepFile --parameters storageName=sebugamlproper
+
 
