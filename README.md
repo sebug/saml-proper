@@ -17,3 +17,9 @@ You can list regions available as follows:
 We'll put the resources in a resource group:
 
 	az group create --name samlProperResourceGroup --location switzerlandnorth
+
+Now we can create a deployment group
+
+	bicepFile=main.bicep
+	az deployment group create --name spbicep --resource-group samlProperResourceGroup --template-file $bicepFile
+
